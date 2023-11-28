@@ -33,6 +33,7 @@ typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
+
 /**
  * struct levelorder_queue_s - Queue for level-order traversal
  * @node: Pointer to a node in a binary tree
@@ -88,5 +89,8 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
+
+/* Print function */
+void binary_tree_print(const binary_tree_t *);
 
 #endif /* BINARY_TREES_H */
